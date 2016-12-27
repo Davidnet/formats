@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}                           % UTF-8 Encoding
+\usepackage[T1]{fontenc}                              % Using Internationalization
+
+\newcommand{\name}{David Cardozo}
+\newcommand{\fullname}{Germán David Cardozo Bolívar}
+\newcommand{\course}{MATE-1211 Álgebra Abstracta II}
+\newcommand{\problemset}{Problem Set 1}
+
+
+\renewcommand{\rmdefault}{ppl}                        % Palatino font
+\usepackage[euler-digits, euler-hat-accent]{eulervm}  % AMS-Euler
+\usepackage{mathtools}                                % This charges AMSTools
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\setbr{\lbrace}{\rbrace}
+\usepackage{amsthm}
+\theoremstyle{plain}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lem}{Lemma}
+\newtheorem*{prop}{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{exmp}{Example}
+\newtheorem{exer}[exmp]{Exercise}
+\newtheorem{alg}[exmp]{Algorithm}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
+\usepackage{xcolor}
+\usepackage{mdframed}
+\surroundwithmdframed{exmp}
+\surroundwithmdframed[linewidth=2pt]{thm}
+\mdfdefinestyle{theoremstyle}{%
+	linewidth=2pt,%
+	frametitlerule=true,%
+	frametitlebackgroundcolor=gray!40,
+	innertopmargin=\topskip,
+}
+\mdtheorem[style=theoremstyle]{definition}{Definition}
+\mdtheorem[style=theoremstyle]{nicetheorem}{Theorem}
+
+
+\usepackage{lipsum}
+\setlength{\parskip}{1pc}
+\setlength{\parindent}{0pt}
+\setlength{\topmargin}{-3pc}
+\setlength{\textheight}{9.5in}
+\setlength{\oddsidemargin}{0pc}
+\setlength{\evensidemargin}{0pc}
+\setlength{\textwidth}{6.5in}
+
+\newcommand{\answer}[1]{\newpage
+	\noindent
+	\framebox{\vbox{\course{} \hfill {\bf \problemset}
+			\hfill \# #1 \\
+			\name{} \hfill \today
+		}
+	}
+	\bigskip
+}
+
+%\usepackage{minted}
+
+\begin{document}
+\answer{1-- Asymptotic Growth}
+
+\end{document}
+
